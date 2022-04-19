@@ -10,5 +10,8 @@
     "naive-ui": "^2.25.5",
     "nuxt3": "latest",
     "unplugin-vue-components": "^0.17.21"
+  },
+  "dependencies": {
+    "@vicons/ionicons5": "^0.12.0"
   }
 }

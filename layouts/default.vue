@@ -144,3 +144,8 @@ export default defineComponent({
   },
 });
 </script>
+<style>
+.n-menu.n-menu--horizontal .n-menu-item-content-header a {
+  color: #0073cb;
+}
+</style>

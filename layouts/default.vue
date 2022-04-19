@@ -1,11 +1,16 @@
 <template>
   <n-layout style="height: 860px">
-    <n-layout-header style="height: 64px; padding: 10px" bordered>
-      <n-menu
-        v-model:value="activeKey"
-        mode="horizontal"
-        :options="menuOptions"
-      />
+    <n-layout-header style="height: 64px" bordered>
+      <n-space style="padding: 10px">
+        <n-gradient-text type="info" style="padding-top: 10px">
+          DentalDesk
+        </n-gradient-text>
+        <n-menu
+          v-model:value="activeKey"
+          mode="horizontal"
+          :options="menuOptions"
+        />
+      </n-space>
     </n-layout-header>
     <n-layout
       position="absolute"
@@ -64,12 +69,10 @@ const menuOptions = [
         "Hear the Wind Sing"
       ),
     key: "hear-the-wind-sing",
-    icon: renderIcon(BookIcon),
   },
   {
     label: "Pinball 1973",
     key: "pinball-1973",
-    icon: renderIcon(BookIcon),
 
     children: [
       {
@@ -81,13 +84,10 @@ const menuOptions = [
   {
     label: "A Wild Sheep Chase",
     key: "a-wild-sheep-chase",
-
-    icon: renderIcon(BookIcon),
   },
   {
     label: "Dance Dance Dance",
     key: "Dance Dance Dance",
-    icon: renderIcon(BookIcon),
     children: [
       {
         type: "group",
